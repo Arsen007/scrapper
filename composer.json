@@ -6,7 +6,9 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*",
+        "unikent/curl": "5.0.8",
+        "sendgrid/sendgrid": "3.2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

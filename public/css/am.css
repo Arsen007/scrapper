@@ -1,0 +1,33 @@
+#cboxClose{position:absolute; bottom:10px; right:20px; display:block; background:url(/img/close.png) no-repeat top center; width:86px; height:25px; text-indent:-9999px;}
+
+#toTop{
+	width: 163px;
+	background:url('/img/go_top_am.png') no-repeat top center;
+	text-align: center;	
+	position: fixed;
+	bottom: 260px;
+	cursor: pointer;
+	display: none;
+	height:34px;
+	margin-left:20px;
+}
+
+.autopagetab_act{
+	float:left;
+	height:35px;
+	background:#fff;
+	line-height:35px;
+	padding:0px 10px 0px 13px;
+	color:#f00101;
+	cursor:pointer;
+	font-weight:bold
+}
+.autopagetab{
+	float:left;
+	height:35px;
+	line-height:35px;
+	padding:0px 10px 0px 13px;
+	cursor:pointer;
+	font-weight:bold
+	            
+}
