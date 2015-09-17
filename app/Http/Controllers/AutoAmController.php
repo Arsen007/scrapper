@@ -10,7 +10,6 @@ namespace App\Http\Controllers;
 
 
 use App\AutoAm;
-use App\Providers\AppServiceProvider;
 use Unikent\Curl\Curl;
 use \DOMDocument;
 use \DOMXPath;
@@ -18,7 +17,7 @@ use \SendGrid;
 
 class AutoAmController extends Controller
 {
-    private $autoAmBaseUrl = 'http://www.auto.am/am/search/volkswagen/golf/?year_from=2000&year_to=2003';
+    private $autoAmBaseUrl = 'http://www.auto.am/am/search/volkswagen/golf/?year_from=2000&year_to=2003&gearbox=1&rudder=1';
     public $baseUrl = 'http://www.auto.am';
 
     public function getAutos()
