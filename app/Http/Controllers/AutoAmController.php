@@ -50,7 +50,9 @@ class AutoAmController extends Controller
                 $htmlArr []= $this->DOMinnerHTML($ad);
             }
         }
-        $this->sendEmail('arssdev@gmail.com','autos@arsen-sargsyan.info','New Auto in auto.am',view('template',['tr_html_arr' =>$htmlArr ]));
+        if(!empty($htmlArr)){
+            $this->sendEmail('arssdev@gmail.com','autos@arsen-sargsyan.info','New Auto in auto.am',view('template',['tr_html_arr' =>$htmlArr ]));
+        }
         return count($htmlArr).' new autos sent';
     }
 
